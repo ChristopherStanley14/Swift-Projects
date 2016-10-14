@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B9A2226D1DAD344500BA5E9D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2226C1DAD344500BA5E9D /* main.swift */; };
-		B9A222741DAD3AAF00BA5E9D /* interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222731DAD3AAF00BA5E9D /* interactive.swift */; };
 		B9A222761DAD3AC500BA5E9D /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222751DAD3AC500BA5E9D /* io.swift */; };
 		B9A222781DAD3DE900BA5E9D /* library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A222771DAD3DE900BA5E9D /* library.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		B9A222691DAD344500BA5E9D /* library-ccs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "library-ccs"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A2226C1DAD344500BA5E9D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B9A222731DAD3AAF00BA5E9D /* interactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interactive.swift; sourceTree = "<group>"; };
 		B9A222751DAD3AC500BA5E9D /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
 		B9A222771DAD3DE900BA5E9D /* library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = library.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				B9A2226C1DAD344500BA5E9D /* main.swift */,
-				B9A222731DAD3AAF00BA5E9D /* interactive.swift */,
 				B9A222751DAD3AC500BA5E9D /* io.swift */,
 				B9A222771DAD3DE900BA5E9D /* library.swift */,
 			);
@@ -129,7 +126,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9A222741DAD3AAF00BA5E9D /* interactive.swift in Sources */,
 				B9A222781DAD3DE900BA5E9D /* library.swift in Sources */,
 				B9A222761DAD3AC500BA5E9D /* io.swift in Sources */,
 				B9A2226D1DAD344500BA5E9D /* main.swift in Sources */,

@@ -12,10 +12,9 @@ class Library {
     
     private var io = Io()
     var currentInput: String = ""
-    let userCalendar = Calendar.current
     
-    
-    
+    let date = DateFormatter.localizedString(from: Date() as Date, dateStyle: .short, timeStyle: .short)
+    let dueDate = DateFormatter.localizedString(from: Date(timeIntervalSinceNow: 604800) as Date, dateStyle: .short, timeStyle: .short)
     
     
     var libraryArray = ["Frankenstein",
@@ -29,11 +28,9 @@ class Library {
     
     
     
-    
-    
     func addBook() {
         
-
+        
         io.writeMessage("Enter the title of the book:")
         currentInput = io.getInput()
         
@@ -46,11 +43,6 @@ class Library {
     
     func checkIn() {
         
-        let checkInDate = userCalendar.date(byAdding: .day, value: 0, to: Date())
-        let myFormatter = DateFormatter()
-        myFormatter.dateStyle = .full
-        myFormatter.string(from: checkInDate!)
-        
         
         io.writeMessage("Enter the title of the book:")
         currentInput = io.getInput()
@@ -60,7 +52,7 @@ class Library {
                 checkedOutArray.remove(at: index)
             }
             libraryArray.append(currentInput)
-            print("Checked in \(currentInput) at \(checkInDate!)")
+            print("Checked in \(currentInput) at \(date)")
         } else {
             print("That book isn't checked out, or we don't have that book.")
         }
@@ -71,10 +63,6 @@ class Library {
     
     func checkOut() {
         
-        let dueDate = userCalendar.date(byAdding: .day, value: 7, to: Date())
-        let myFormatter = DateFormatter()
-        myFormatter.dateStyle = .full
-        myFormatter.string(from: dueDate!)
         
         io.writeMessage("Enter the title of the book:")
         currentInput = io.getInput()
@@ -85,9 +73,9 @@ class Library {
             }
             checkedOutArray.append(currentInput)
             print("Checked out \(currentInput)")
-            print("This book is due back on \(dueDate!)")
+            print("This book is due back by \(dueDate)")
         } else {
-            print("We don't have that book!")
+            print("We don't have that book right now!")
         }
         
         

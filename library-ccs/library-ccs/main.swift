@@ -10,7 +10,6 @@
 
 import Foundation
 
-let interactive = Interactive()
 let io = Io()
 private var done: Bool = false
 let library = Library()
@@ -46,10 +45,10 @@ while !done {
     case "add":
         library.addBook()
         
-    case "in":
+    case "check in":
         library.checkIn()
     
-    case "out":
+    case "check out":
         library.checkOut()
         
     case "help":
